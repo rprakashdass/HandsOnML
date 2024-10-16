@@ -41,7 +41,7 @@ def predict_single_instance(model, input_data):
 
 def main():
     # Load and prepare data
-    df = load_and_prepare_data('datasets/Employee.csv')
+    df = load_and_prepare_data('datasets/employee.csv')
     X = df.drop(columns=['City', 'LeaveOrNot'], axis=1)
     y = df.LeaveOrNot
 
